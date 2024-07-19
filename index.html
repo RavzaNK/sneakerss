@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div id="headerDiv" class="header">
+    <div onclick="toggle()" class="menu mobile">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div id="navdiv" class="mobilelinkDisplay">
+      <div class="mobilelink">
+        <a class="headerlink size" href="">sneakers</a>
+        <a class="headerlink" href="">Collections</a>
+        <a class="headerlink" href="">Men</a>
+        <a class="headerlink" href="">Women</a>
+        <a class="headerlink" href="">About</a>
+        <a class="headerlink" href="">Contact</a>
+      </div>
+    </div>
+    <div class="ikon mobile">
+      <i class="fa-solid fa-cart-shopping fa-1x" ></i>
+      <img src="görseller/Ekran görüntüsü 2024-07-12 150154.png" width="20px" height="20px">
+
+    </div>
+  </div>
+  <hr>
+  <br><br>
+  <div class="big">
+    <div class="small-1">
+      <div>
+        <img class="bigfoto" src="görseller/1.jpg" width="40%" height="40%">
+      </div>
+      <div class="fotolar">
+        <img class="foto" src="görseller/2.1.jpg" alt="">
+        <img class="foto" src="görseller/3.jpg" alt="">
+        <img class="foto" src="görseller/4.jpg" alt="">
+        <img class="foto" src="görseller/5.jpg" alt="">
+      </div>
+    </div>
+    <div class="small-2 ">
+      <h6>SNEAKER COMPANY</h6>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+        they’ll withstand everything the weather can offer.</p>
+      <i class="fa-solid fa-dollar-sign">125.00</i>
+      <button class="yüzdelik">%50</button>
+      <br>
+      <p><span class="fiyat"><i class="fa-solid fa-dollar-sign"></i> 125.00</span>.</p>
+
+      <div class="buttons">
+        <div class="button-container">
+          <button><i class="icon fas fa-minus"></i></button>
+          <span>0</span>
+          <button><i class="icon fas fa-plus"></i></button>
+        </div>
+        <button class="buton">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <strong>Add to cart</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggle() {
+      let x = document.getElementById("navdiv");
+      let y = document.getElementById("headerDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.height = "auto";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
